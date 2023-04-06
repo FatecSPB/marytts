@@ -1,0 +1,35 @@
+# Portuguese language config
+locale: pt
+
+# The Modules
+modules.classes:
+  #- marytts.language.pt.JTokeniser
+  #- marytts.language.pt.Preprocess
+- marytts.modules.JPhonemiser(pt.)
+#- marytts.language.pt.Prosody
+#- marytts.modules.SimplePhoneme2AP(pt)
+#- marytts.language.pt.PronunciationModel
+#- marytts.modules.OpenNLPPosTagger(pt,pt.pos)
+
+featuremanager.classes:
+- marytts.features.FeatureProcessorManager(pt)
+
+# Module settings
+pt:
+  allophoneset: jar:/marytts/language/pt/lexicon/allophones.pt.xml
+  lexicon: jar:/marytts/language/pt/lexicon/pt_lexicon.fst
+  lettertosound: jar:/marytts/language/pt/lexicon/pt.lts
+  userdict: MARY_BASE/user-dictionaries/userdict.txt
+
+  pos:
+    #model: jar:/marytts/language/pt/tagger/pt-pos-maxent-1.5.bin
+    punct.regex: ',|\\.|:'
+
+  prosody:
+    paragraphdeclination: true
+    # rules for prediction of ToBI tones
+    tobipredparams: jar:/marytts/language/pt/prosody/tobipredparams_pt.xml
+    # rules for accent priorities of pos
+    accentPriorities: jar:/marytts/language/pt/prosody/POSAccentPriorities.pt.properties
+    # copy the word accents to the first accented syllable
+    syllableaccents: true

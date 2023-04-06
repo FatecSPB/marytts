@@ -19,3 +19,6 @@ test-output/
 
 # OSX
 .DS_Store
+
+.fst
+.lts

@@ -1,6 +1,5 @@
 # EOL encoding is LF, but native in working copy
 * text=auto
-
 # batch, markdown, properties, text, and config files should be viewable and user-editable
 # -- even in Windows Notepad, so CRLF EOL
 *.bat text eol=crlf
@@ -8,3 +7,5 @@
 *.md text eol=crlf
 *.properties text eol=crlf
 *.txt text eol=crlf
+*.lst filter=lfs diff=lfs merge=lfs -text
+*.fst filter=lfs diff=lfs merge=lfs -text
