@@ -1,22 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?><marytts-install xmlns="http://mary.dfki.de/installer">
-  <voice locale="en_US" name="cmu-slt" gender="female" type="unit selection" version="5.2">
-    <description>A female English unit selection voice</description>
-    <license href="http://festvox.org/cmu_arctic/cmu_arctic/cmu_us_slt_arctic/COPYING"/>
-    <package md5sum="ed5a4a08a2275f3ab4e1d1edaf4957a8" filename="voice-cmu-slt-5.2.zip" size="104627156">
-      <location folder="true" href="http://mary.dfki.de/download/5.2/"/>
-      <location folder="false" href="https://github.com/marytts/voice-cmu-slt/releases/download/v5.2/voice-cmu-slt-5.2.zip"/>
-    </package>
-    <depends language="en-US" version="5.2"/>
-  </voice>
-	<voice locale="pt" name="br-mlr-dnn" gender="female" type="unit selection" version="5.2">
-    <description>A female Portuguese unit selection voice</description>
-    <license href="http://festvox.org/cmu_arctic/cmu_arctic/cmu_us_slt_arctic/COPYING"/>
-    <package md5sum="ed5a4a08a2275f3ab4e1d1edaf4957a8" filename="voice-cmu-slt-5.2.zip" size="104627156">
-      <location folder="true" href="http://mary.dfki.de/download/5.2/"/>
-      <location folder="false" href="https://github.com/marytts/voice-cmu-slt/releases/download/v5.2/voice-cmu-slt-5.2.zip"/>
-    </package>
-    <depends language="pt" version="5.2"/>
-  </voice>
   <voice locale="de" name="bits1" gender="female" type="unit selection" version="5.2">
     <description>A female German unit selection voice, built from voice recordings provided by the BITS project at the Bavarian Archive of Speech Signals</description>
     <license href="http://mary.dfki.de/download/by-nd-3.0.html"/>
@@ -166,7 +148,15 @@
     </package>
     <depends language="en-GB" version="5.2"/>
   </voice>
-
+  <voice locale="en_US" name="cmu-slt" gender="female" type="unit selection" version="5.2">
+    <description>A female English unit selection voice</description>
+    <license href="http://festvox.org/cmu_arctic/cmu_arctic/cmu_us_slt_arctic/COPYING"/>
+    <package md5sum="ed5a4a08a2275f3ab4e1d1edaf4957a8" filename="voice-cmu-slt-5.2.zip" size="104627156">
+      <location folder="true" href="http://mary.dfki.de/download/5.2/"/>
+      <location folder="false" href="https://github.com/marytts/voice-cmu-slt/releases/download/v5.2/voice-cmu-slt-5.2.zip"/>
+    </package>
+    <depends language="en-US" version="5.2"/>
+  </voice>
   <voice locale="en_US" name="cmu-bdl" gender="male" type="unit selection" version="5.2">
     <description>A male US English unit selection voice, built from recordings provided by Carnegie Mellon University</description>
     <license href="http://mary.dfki.de/download/arctic-license.html"/>
@@ -311,4 +301,14 @@
     </package>
     <depends language="tr" version="5.2"/>
   </voice>
+  <voice locale="pt_BR" name="pt_br_male_voice-hsmm" gender="male" type="hsmm" version="5.2">
+    <description>A male Turkish hidden semi-Markov model voice</description>
+    <license href="http://mary.dfki.de/download/by-nd-3.0.html"/>
+    <package md5sum="843f45d7e315b28eb35a4b2594ef4da6" filename="voice-pt_br_male_voice-hsmm-5.2.zip" size="1365754">
+      <location folder="true" href="http://mary.dfki.de/download/5.2/"/>
+      <location folder="false" href="https://github.com/FatecSPB/voice-pt_br_male_voice-hsmm/releases/download/5.2/voice-pt_br_male_voice-hsmm-5.2.zip"/>
+    </package>
+    <depends language="pt-BR" version="5.2"/>
+  </voice>
+  
 </marytts-install>
